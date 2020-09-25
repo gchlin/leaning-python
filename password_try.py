@@ -1,13 +1,16 @@
 # the passoword is 1
-x = 3
-passoword = input('please input the passoword: ')
-passoword = str(passoword)
-while x > 0:
-	print(passoword)
-	if passoword == '1':
-		print('your passoword is correct')
+password = "aaa111"
+i = 3
+while i > 0:
+	i = i - 1
+	pwd = input('please input the password: ')
+	print(pwd)
+	if pwd == password:
+		print('your password is correct')
 		break
 	else:
 		print('your password is uncorrect, please retype it')
-		print('reman', x, 'times you can tryout')
-		x = x - 1
+		if i > 0:
+			print('reman', i, 'times you can tryout')
+		else:
+			print("no chance anymore")
