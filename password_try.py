@@ -2,7 +2,7 @@
 x = 3
 passoword = input('please input the passoword: ')
 passoword = str(passoword)
-while True:
+while x > 0:
 	print(passoword)
 	if passoword == '1':
 		print('your passoword is correct')
@@ -11,7 +11,3 @@ while True:
 		print('your password is uncorrect, please retype it')
 		print('reman', x, 'times you can tryout')
 		x = x - 1
-		if x == 0:
-			print('No more chance')
-			break
-		passoword = input('please input the passoword: ')
